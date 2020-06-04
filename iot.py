@@ -4,13 +4,13 @@ import ibmiotf.application
 import ibmiotf.device
 
 organization = "v9c1fm" 
-deviceType = "A2"
-deviceId = "A2"
+deviceType = "Node"
+deviceId = "A3"
 authMethod = "token"
 authToken = "12345678" 
 
 def myCommandCallback(cmd):
-        print("Command received: %s" % cmd.data)
+        print("Command received: %s" % cmd.command)
         if cmd.data['command']=='motoron':
                 print("MOTOR ON IS RECEIVED")
                           
